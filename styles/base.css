@@ -1,73 +1,135 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-
-body {
-    font-family: 'Open Sans', sans-serif;
+/* General styling */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif; /* Use your preferred Google Font */
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Default text color */
+    line-height: 1.6;
+}
+
+/* Header styling */
 header {
-    background-color: #005f99;
+    background-color: #1a5276; /* Dark blue background */
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+header h1 .highlight {
+    color: #f4d03f; /* Yellow color for the name */
+    font-weight: bold;
+}
+
+/* Navigation styling */
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333; /* Darker background for nav */
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
     padding: 10px 20px;
-    background-color: #007acc;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    display: inline-block;
+    font-size: 1.1rem;
 }
 
 nav ul li a:hover {
-    background-color: #005f99;
+    color: #f4d03f; /* Yellow hover effect */
+    transition: color 0.3s ease;
 }
 
+/* Main content styling */
 main {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 10px;
-}
-
-.card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
-    max-width: 100%;
-    border-radius: 5px;
+main .card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+  aside img {
+    width: 200px;
+    height: auto;
+  }
+
+main .card h2 {
+    color: #1a5276; /* Matching blue for the section title */
 }
 
+main .card p {
+    margin: 15px 0;
+}
+
+/* Sidebar (aside) styling */
+aside {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
 footer {
-    background-color: #005f99;
+    background-color: #333;
     color: white;
-    padding: 10px;
     text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
 footer p {
     margin: 5px 0;
+}
+
+footer span#currentyear {
+    font-weight: bold;
+}
+
+footer p#lastModified {
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
 }

@@ -1,8 +1,9 @@
-// Get the current year and display it in the footer
-const yearSpan = document.getElementById("currentyear");
+// Dynamically set the current year in the footer
+const currentYearElement = document.getElementById("currentyear");
 const currentYear = new Date().getFullYear();
-yearSpan.textContent = currentYear;
+currentYearElement.textContent = currentYear;
 
-// Get the last modified date of the document and display it in the second paragraph
-const lastModifiedParagraph = document.getElementById("lastModified");
-lastModifiedParagraph.textContent = "Last modified: " + document.lastModified;
+// Dynamically set the last modified date in the footer
+const lastModifiedElement = document.getElementById("lastModified");
+const lastModified = document.lastModified;
+lastModifiedElement.textContent = "Last Modified: " + lastModified;
