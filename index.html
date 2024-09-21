@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Your Name">
+    <meta name="author" content="Your Name">
+    <title>WDD 131 - Dynamic Web Fundamentals - Your Name</title>
+    <link rel="stylesheet" href="base.css">
+    <script src="getdates.js" defer></script>
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scriptures</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area with two sections -->
+    <main>
+        <section class="card">
+            <h2>Section 1 Heading</h2>
+            <img src="images/example1.jpg" alt="Example Image 1">
+            <p>This is the content for section 1.</p>
+            <a href="https://example.com">Resource 1</a>
+        </section>
+        <section class="card">
+            <h2>Section 2 Heading</h2>
+            <img src="images/example2.jpg" alt="Example Image 2">
+            <p>This is the content for section 2.</p>
+            <a href="https://example.com">Resource 2</a>
+        </section>
+    </main>
+
+    <!-- Footer with dynamically populated year and last modified date -->
+    <footer>
+        <p>© <span id="currentyear"></span> Your Name, Rwanda</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
