@@ -40,13 +40,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-.hamburger-menu {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
-}
 /* Hamburger menu styles for mobile */
 .hamburger-menu {
     display: block;
