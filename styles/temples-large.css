@@ -1,0 +1,10 @@
+/* For Larger Screens (1024px and above) */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
