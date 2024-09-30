@@ -38,6 +38,15 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;  /* Smooth transition */
+}
+
+/* :hover effect for the anchor tags */
+nav ul li a:hover {
+    color: #780505;  /* Change text color on hover */
+    background-color: white;  /* Optional: change background color */
+    padding: 0.2rem;
+    border-radius: 5px;  /* Optional: round the edges */
 }
 
 /* Hamburger menu styles for mobile */
