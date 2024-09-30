@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
-    
-    <!-- Google Fonts API -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Mobile-first CSS files -->
-    <link rel="stylesheet" href="temples.css">
-    <link rel="stylesheet" href="temples-large.css" media="(min-width: 1024px)">
-
-    <!-- External JavaScript -->
-    <script src="temples.js" defer></script>
+    <!-- Link to CSS files (mobile-first design) -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- JavaScript -->
+    <script defer src="scripts/temples.js"></script>
 </head>
 
 <body>
-    <!-- Header Section -->
     <header>
         <h1>Temple Album</h1>
+        <!-- Navigation -->
         <nav>
-            <button class="hamburger" id="hamburger">☰</button>
-            <ul id="nav-menu" class="nav-menu">
+            <button class="hamburger-menu" id="hamburger">&#9776;</button> <!-- Hamburger Button -->
+            <ul id="nav-links" class="nav-hidden">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Old</a></li>
                 <li><a href="#">New</a></li>
@@ -30,66 +29,56 @@
                 <li><a href="#">Small</a></li>
             </ul>
         </nav>
+        
     </header>
 
-    <!-- Main Section -->
     <main>
         <h2>Home</h2>
-
-        <!-- Image Gallery -->
-        <section class="gallery">
+        <!-- Temple Images -->
+        <section class="grid-container">
             <figure>
-                <img src="temples-small.png" alt="San Diego California">
+                <img src="images/temple1.jpg" alt="San Diego California Temple"width="250">
                 <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="temples-small.png" alt="San Diego California">
+                <img src="images/temple1.jpg" alt="San Diego California Temple"width="250">
                 <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="temples-small.png" alt="San Diego California">
+                <img src="images/temple1.jpg" alt="San Diego California Temple"width="250">
                 <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="temples-small.png" alt="San Diego California">
+                <img src="images/temple1.jpg" alt="San Diego California Temple"width="250">
                 <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="temples-small.png" alt="San Diego California">
+                <img src="images/temple1.jpg" alt="San Diego California Temple"width="250">
                 <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="temples-small.png" alt="San Diego California">
+                <img src="images/temple1.jpg" alt="San Diego California Temple"width="250">
                 <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="temples-small.png" alt="San Diego California">
+                <img src="images/temple1.jpg" alt="San Diego California Temple"width="250">
                 <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="temples-small.png" alt="San Diego California">
+                <img src="images/temple1.jpg" alt="San Diego California Temple"width="250">
                 <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="temples-small.png" alt="San Diego California">
+                <img src="images/temple1.jpg" alt="San Diego California Temple"width="250">
                 <figcaption>San Diego California</figcaption>
             </figure>
         </section>
     </main>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 🌸 Rubia Magdalena Francesco 🌸 Madagascar <br>
-        Last Modification: <span id="last-modified"></span></p>
+        <p>&copy; <span id="currentYear"></span> &#x1F337; NDARAMA Mark &#x1F339; Rwanda</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-
 </body>
+
 </html>

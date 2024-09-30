@@ -1,18 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
+// Hamburger menu toggle for mobile
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
-    // Toggle hamburger menu on click
-    hamburger.addEventListener('click', () => {
-        if (navMenu.style.display === 'flex') {
-            navMenu.style.display = 'none';
-            hamburger.textContent = '☰';
-        } else {
-            navMenu.style.display = 'flex';
-            hamburger.textContent = '✖';
-        }
-    });
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');  // Toggle visibility of nav links
 
-    // Update the footer with the last modified date
-    document.getElementById('last-modified').textContent = document.lastModified;
+    // Toggle hamburger icon between ☰ and X
+    if (hamburger.textContent === '☰') {
+        hamburger.textContent = '✖';  // Change to 'X' when clicked
+    } else {
+        hamburger.textContent = '☰';  // Change back to hamburger icon
+    }
 });
+
+// Footer - Set current year and last modified date
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = document.lastModified;

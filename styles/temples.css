@@ -1,67 +1,116 @@
-/* Basic Page Styles */
+/* General styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-}
-
-h1, h2 {
     text-align: center;
-    margin: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #4b0082;
+    background-color: #780505;
+    padding: 1rem;
     color: white;
-    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-.hamburger {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
+    flex-direction: column;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+/* Hamburger menu styles for mobile */
+.hamburger-menu {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hide the full nav menu by default on mobile */
+#nav-links {
     display: none;
     flex-direction: column;
 }
 
-nav ul li {
-    margin: 10px 0;
+/* Show the nav menu when the show class is added */
+#nav-links.show {
+    display: flex;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+/* Hide the hamburger menu in larger screens */
+@media screen and (min-width: 768px) {
+    .hamburger-menu {
+        display: none;  /* Hide the hamburger button */
+    }
+
+    #nav-links {
+        display: flex;  /* Show the full nav links */
+        flex-direction: row;
+        gap: 1rem;
+    }
 }
 
-.gallery {
+main h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Image grid */
+.grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 20px;
+    gap: 1rem;
+    margin: 1rem;
 }
 
 figure {
     margin: 0;
-    text-align: center;
+    padding: 0;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
 }
 
 footer {
-    background-color: #4b0082;
+    background-color: #780505;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }
