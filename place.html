@@ -14,7 +14,13 @@
 <body>
     <header>
         <h1>Rwanda</h1>
-        </picture>
+        <picture>
+        <!-- Hero Image in WebP format -->
+            <!-- Mobile view image -->
+            <source srcset="images/rwanda-mobile.svg" media="(max-width: 768px)" type="image/svg">
+            <!-- Desktop view image -->
+            <source srcset="images/rwanda.webp" type="image/webp">
+            <!-- Fallback image if WebP is not supported -->
             <img src="images/rwanda.webp" alt="Beautiful Rwanda landscape" class="hero-image">
         </picture>
     </header>
