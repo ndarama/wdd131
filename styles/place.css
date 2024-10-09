@@ -78,8 +78,12 @@ footer {
     }
     
     :root {
-        --primary-color: #f00;
-        --secondary-color: #0f0;
+        --primary-color:  #20603D;
+        --secondary-color: #abd1c6;
+        --font-family: 'Roboto', sans-serif;
+        --font-size-base: 16px;
+    }
+          
     }    
     .data-card, .weather-card {
         width: 90%;

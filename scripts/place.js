@@ -1,3 +1,7 @@
+// Footer - Set current year and last modified date
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = document.lastModified;
+
 // Static values for temperature (in °C) and wind speed (in km/h)
 const temperature = 10;  // Static temperature in °C
 const windSpeed = 5;     // Static wind speed in km/h
