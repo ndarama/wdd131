@@ -1,0 +1,118 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #780505;
+  padding: 1rem;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0.5rem 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;  /* Smooth transition */
+}
+
+/* :hover effect for the anchor tags */
+nav ul li a:hover {
+  color: #780505;  /* Change text color on hover */
+  background-color: white;  /* Optional: change background color */
+  padding: 0.2rem;
+  border-radius: 5px;  /* Optional: round the edges */
+}
+
+/* Hamburger menu styles for mobile */
+.hamburger-menu {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide the full nav menu by default on mobile */
+#nav-links {
+  display: none;
+  flex-direction: column;
+}
+
+/* Show the nav menu when the show class is added */
+#nav-links.show {
+  display: flex;
+}
+
+/* Hide the hamburger menu in larger screens */
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+      display: none;  /* Hide the hamburger button */
+  }
+
+  #nav-links {
+      display: flex;  /* Show the full nav links */
+      flex-direction: row;
+      gap: 1rem;
+  }
+}
+
+main h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Image grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #780505;
+  color: white;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}  

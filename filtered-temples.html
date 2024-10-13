@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temple Album showcasing.">
+  <meta name="author" content="NDARAMA Mark">
+  <title>Temple Album</title>
+  <!-- Link to CSS files (mobile-first design) -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <!-- JavaScript -->
+  <script defer src="scripts/filtered-temples.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Temple Picture Album</h1>
+    <!-- Navigation -->
+    <nav>
+      <button class="hamburger-menu" id="hamburger">&#9776;</button> <!-- Hamburger Button -->
+      <ul id="nav-links" class="nav-hidden">
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="#" id="old-temples">Old</a></li>
+        <li><a href="#" id="new-temples">New</a></li>
+        <li><a href="#" id="large-temples">Large</a></li>
+        <li><a href="#" id="small-temples">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="temple-container" class="grid-container">
+      <!-- Temple cards will be dynamically generated here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> &#x1F337; NDARAMA Mark &#x1F339; Rwanda</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+
+</html>
