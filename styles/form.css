@@ -1,0 +1,76 @@
+/* styles/form.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #780505;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #780505;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #780505;
+}
+
+footer {
+    background-color: #780505;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* styles/form-large.css */
+@media (min-width: 768px) {
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    form {
+        padding: 30px;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: space-between;
+    }
+}

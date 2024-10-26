@@ -1,0 +1,30 @@
+/* form-large.css */
+@media (min-width: 768px) {
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .horizontal-group {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .form-group {
+        flex: 1;
+    }
+
+    form {
+        gap: 20px;
+    }
+
+    input, select, textarea {
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+}
