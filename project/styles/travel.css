@@ -1,0 +1,107 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #006400;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Section Headers */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    color: #333;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Item Styling */
+.destination-item, .package-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    background-color: #FFF;
+}
+
+/* Icon Styling */
+.package-item i {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.bronze-icon {
+    color: #cd7f32;
+}
+
+.silver-icon {
+    color: #C0C0C0;
+}
+
+.gold-icon {
+    color: #FFD700;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

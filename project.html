@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Rwanda - Destinations</title>
+    <link rel="stylesheet" href="travel.css">
+    <link rel="stylesheet" href="travel-large.css" media="screen and (min-width: 1200px)">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h1>Travel Rwanda</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="travel.html">Destinations</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destination-intro">
+            <h2>Discover Rwanda</h2>
+            <p>Explore the beauty and culture of Rwanda, with stunning landscapes, vibrant cities, and rich wildlife.</p>
+        </section>
+
+        <section class="destinations-list">
+            <div class="destination-item">
+                <img src="kigali.jpg" alt="Kigali City" loading="lazy">
+                <h3>Kigali</h3>
+                <p>A bustling city with a rich cultural scene, offering markets, art galleries, and delicious food.</p>
+            </div>
+            <div class="destination-item">
+                <img src="volcanoes.jpg" alt="Volcanoes National Park" loading="lazy">
+                <h3>Volcanoes National Park</h3>
+                <p>Home to the mountain gorillas, this park is a must-see destination for nature lovers.</p>
+            </div>
+            <div class="destination-item">
+                <img src="lake-kivu.jpg" alt="Lake Kivu" loading="lazy">
+                <h3>Lake Kivu</h3>
+                <p>A serene lake ideal for relaxation, kayaking, and enjoying scenic views.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 | Designed by Mark Ndarama | Rwanda</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="travel.js"></script>
+</body>
+</html>
+
+
+
+<!-- travel.css -->
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC; /* Soft Beige */
+}
+
+header {
+    background-color: #006400;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+/* Destination Intro */
+.destination-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Destinations List */
+.destinations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.destination-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #CCC;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.destination-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+<!-- travel-large.css -->
+
+/* Large Screen Styles */
+.destinations-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.destination-item {
+    flex: 0 1 calc(33% - 2rem); /* Three columns */
+    max-width: 400px;
+}
+
+.destination-item img {
+    height: 250px; /* Consistent image height */
+}
+
+<!-- travel.js -->
+
+// Display last modified date in the footer
+document.getElementById("last-modified").textContent = document.lastModified;
+
+// Example interactivity: toggle additional information on click
+document.querySelectorAll('.destination-item').forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('expanded');
+    });
+});
+
+
