@@ -23,11 +23,11 @@
             <h2>Submit Your Review</h2>
             <form action="review.html" method="get">
                 <label for="product">Product Name:</label>
-                <select id="product" name="product" required>
+                <select id="product" name="product">
                     <option disabled selected>Select a Product ...</option>
                 </select>
                 <div class="form-group">
-                    <label for="rating">Overall Rating:</label>
+                    <label>Overall Rating:</label>
                     <div>
                         <input type="radio" id="rating1" name="rating" value="1" required>
                         <label for="rating1" title="1 star">&#9733;</label>
@@ -44,15 +44,15 @@
                 <label for="installDate">Date of Installation:</label>
                 <input type="date" id="installDate" name="installDate" required>
                 <div class="form-group">
-                    <label for="features">Useful Features:</label>
+                    <label>Useful Features:</label>
                     <input type="checkbox" id="feature1" name="features" value="Feature 1">
-                    <label for="feature1">Feature 1</label>
+                    <label for="feature1">Quality</label>
                     <input type="checkbox" id="feature2" name="features" value="Feature 2">
-                    <label for="feature2">Feature 2</label>
+                    <label for="feature2">Durability</label>
                     <input type="checkbox" id="feature3" name="features" value="Feature 3">
-                    <label for="feature3">Feature 3</label>
+                    <label for="feature3">Speciality</label>
                     <input type="checkbox" id="feature4" name="features" value="Feature 4">
-                    <label for="feature4">Feature 4</label>
+                    <label for="feature4">Super Fast</label>
                 </div>
                 <label for="review">Written Review</label>
                 <textarea id="review" name="review" placeholder="Write your review here..."></textarea>
