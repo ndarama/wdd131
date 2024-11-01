@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Travel Rwanda - Packages">
+        <meta name="author" content="NDARAMA Mark">
+        <title>Travel Rwanda - Packages</title>
+        <link rel="stylesheet" href="styles/travel.css">
+        <link rel="stylesheet" href="styles/travel-large.css" media="screen and (min-width: 768px)">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/travellogo.png" alt="Travel Rwanda Logo">
+            <h1>Travel Rwanda</h1>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="travel.html">Home</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Packages Section -->
+    <main>
+        <section class="packages" id="packages">
+            <h2>Our Packages</h2>
+            <div class="package-container">
+                <div class="package bronze">
+                    <i class="fas fa-medal bronze-icon"></i>
+                    <h3>Bronze</h3>
+                    <p>Basic package for budget-friendly travelers</p>
+                    <ul id="bronze-list"></ul>
+                </div>
+                <div class="package silver">
+                    <i class="fas fa-award silver-icon"></i>
+                    <h3>Silver</h3>
+                    <p>Popular package with added benefits</p>
+                    <ul id="silver-list"></ul>
+                </div>
+                <div class="package gold">
+                    <i class="fas fa-trophy gold-icon"></i>
+                    <h3>Gold</h3>
+                    <p>Premium package for exclusive experiences</p>
+                    <ul id="gold-list"></ul>
+                </div>
+            </div>
+        </section>
+            <!-- Method of Payment Section -->
+    <section id="payment-method">
+        <h2>Payment Options</h2>
+        <div class="payment-container">
+            <div class="payment-option">
+                <h3>Credit Cards</h3>
+                <p>Secure payment via major credit cards</p>
+            </div>
+            <div class="payment-option">
+                <h3>Online</h3>
+                <p>Pay easily with online banking</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentYear"></span> &#x1F337; NDARAMA Mark &#x1F339; Rwanda</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/trav.js"></script>
+</body>
+</html>

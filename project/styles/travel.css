@@ -70,6 +70,7 @@ h2 {
 }
 
 /* Item Styling */
+
 .destination-item, .package-item {
     display: flex;
     flex-direction: column;
@@ -97,7 +98,243 @@ h2 {
 .gold-icon {
     color: #FFD700;
 }
+/* Packages Section */
+#packages {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f5f5f5;
+}
 
+.package-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.package {
+    border: 1px solid #DDD;
+    padding: 1.5rem;
+    width: 280px;
+    background-color: #FFF;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.package:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.package h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.package p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.package ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+/* Payment Section */
+#payment-method {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f5f5f5;
+}
+
+.payment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.payment-option {
+    border: 1px solid #DDD;
+    padding: 1.5rem;
+    width: 200px;
+    background-color: #FFF;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.payment-option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.payment-option button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-option button:hover {
+    background-color: #FFD700;
+}
+/* Destinations Section */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.featured-container, .more-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destination-item {
+    border: 1px solid #DDD;
+    padding: 1rem;
+    width: 180px;
+    background-color: #FFF;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.destination-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.destination-item p {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+/*Contact us styling */
+.contact-us {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.form-container {
+    flex: 2;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.form-container h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.message-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.submit-btn {
+    padding: 0.7rem;
+    background-color: #8a72b1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #705b8c;
+}
+
+.contact-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Address Section */
+.address-section {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.address-info {
+    text-align: left;
+}
+
+.address-info h2 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.address-info p {
+    margin: 0.5rem 0;
+    color: #555;
+}
 /* Footer Styling */
 footer {
     background-color: #006400;
@@ -105,3 +342,4 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
